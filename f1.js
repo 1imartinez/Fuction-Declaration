@@ -35,7 +35,7 @@ function plusplus(A){
 // (3) Third Task
 // Declare a function named oppRecip() which outputs the opposite reciprocal of the input number.
 function oppRecip(D){
-    let total=;
+    return D;
 }
 
 
@@ -46,8 +46,9 @@ function oppRecip(D){
 // (4) Fourth Task
 // Declare a function named pthagorean() which has two inputs you guessed it a and b.
 // The function outputs the value of the third side of the right triangle.
-function pthagorean(Y){
-    let total=;
+function pythagorean(a,b){
+    let c= a*a + b*b;
+    return Math.sqrt(c)
 }
 
 
@@ -58,8 +59,8 @@ function pthagorean(Y){
 // (5) Fifth Task
 // Declare a function named circleArea() which has one input named radius.
 // The function outputs the area of the circle.
-function circleArea(U){
-    let total=;
+function circleArea(u){
+    return u;
 }
 
 
@@ -70,8 +71,9 @@ function circleArea(U){
 // (6) Sixth Task
 // Declare a function named boxVolume() which has three inputs: length, width, and depth.
 // The function outputs the volume of the box;
-function boxVolume(I){
-    function total=;
+function boxVolume(l,w,d){
+    let total= l*w*d;
+    return total
 }
 
 
@@ -87,7 +89,7 @@ function boxVolume(I){
 // Declare a function named thisIsMadness() which accepts one string input named city.
 // The function should output the string: "No! This is <city>!!"
 function thisIsMadness(city){
-    return="No! This is "+city;
+    return "No! This is "+city;
 }
 
 
@@ -100,7 +102,7 @@ function thisIsMadness(city){
 // Declare a function named yo() which accepts one string input named fam.
 // The function should output the string: "yo <fam>!  What's good <fam>??"
 function yo(fam){
-    return="you"+fam;
+    return "you"+fam;
 }
 
 
@@ -111,7 +113,9 @@ function yo(fam){
 // (9) Ninth Task
 // Declare a function named beefDay() which has no inputs.
 // This function should output a long string, IN ALL CAPS, of "BEEF DAY" with lots of extra E's, F's, A's, and Y's
-
+function beefDay(){
+    return "BEE"+"EEE"+"FFFFF"+"DA"+"AAAA"+"YYYYY"
+}
 
 
 
@@ -125,8 +129,9 @@ function yo(fam){
 // (10) Tenth Task
 // Declare a function named xor() which has two inputs a and b.
 // This function returns the exclusive or of the two boolean inputs.
-
-
+function xor(a,b){
+    let total= ((!a)&&b)||((!b)&&a)
+}
 
 
 
@@ -136,3 +141,23 @@ function yo(fam){
 
 
 /**************************** END OF FILE *******************************/
+function main(){
+    let x = 5;
+    console.log(`For the next few examples let x = ${x}`);
+    console.log(`1. double the number = ${double(x)}`);
+    console.log(`2. adding one to the number = ${plusplus(x)}`);
+    console.log(`3. the opposite reciprocal of ${x} is ${oppRecip(x)}`);
+    console.log(`4. the pythagorean theorem does 5 = ${pythagorean(3,4)}?`);
+    console.log(`5. the circle with radius ${x} has area = ${circleArea(x)}`);
+    console.log(`6. the volume of a ${x}, ${2*x}, ${3*x} box has volume = ${boxVolume(x,2*x,3*x)}`);
+    console.log(`7. ${thisIsMadness("SPARTA")}`);
+    console.log(`8. ${yo("dude")}`);
+    console.log(`9. ${beefDay()}`);
+    console.log(`10. first test: true == ${xor(true,false)} == ${xor(false,true)}`);
+    console.log(`10. second test: false == ${xor(true,true)} == ${xor(false,false)}`);
+  
+  }
+  
+  //execution of main function
+  main();
+  
